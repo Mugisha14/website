@@ -1,0 +1,457 @@
+
+@import url('https://fonts.googleapis.com/css2?family=poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.1rem 9%;
+    height: 70px;
+    background: #f5f8f6;
+    box-shadow: var(--box-shadow);
+}
+.header p{
+   font-size:2rem;
+   font-weight: bolder;
+   color: var(--black); 
+   background-image: linear-gradient(45deg,green,aqua);
+   border-radius: 14px;
+   border-top-left-radius: 30px;
+   border-top-right-radius: 40px;
+}
+.header p b{
+    color: orange;
+}
+.header .navbar a{
+     font-size: 1.4rem;
+     margin: 0 1rem;
+     color: var(--black);
+     text-decoration: none;
+}
+.header .navbar a:hover{
+    color: rgb(0, 8, 255);
+}
+.header .icons a{
+    height: 6.5rem;
+    width: 6.5rem;
+    line-height: 4.5rem;
+    border-radius: .2rem;
+    background: #eee;
+    color: var(--black);
+    font-size: 2rem;
+    margin-left: .3rem;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+.header .icons .content{
+    display: none;
+    position: absolute;
+    top: 60px; /* Adjust as needed */
+    left: 990px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    white-space: nowrap;
+}
+.header .icons a:hover{
+    background: var(--orange);
+    color: rgb(254, 99, 2);
+ 
+}
+#menu-btn{
+    display: none;
+}
+.header .search-form{
+    position: absolute;
+    top: 110%;
+    right: -110rem;
+   width: 50rem;
+    background: white;
+    height: 5rem;
+    border-radius: .5rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+}
+.header .search-form .active{
+    right: 2rem;
+    transition: .4s linear;
+}
+.header .search-form input{
+    height: 100%;
+    width: 100%;
+    background: none;
+    text-transform: none;
+    font-size: 1.6rem;
+    color: var(--black);
+    padding: 0 1.5rem;
+}
+.header .search-form label{
+    font-size: 2.2rem;
+    padding-right: 1.5rem;
+    color: var(--black);
+    cursor: pointer;
+}
+.header .search-form label:hover{
+    color: var(--orange);
+}
+.header .shopping{
+    position: absolute;
+   background-color: white;
+  
+}
+.header .shopping .box{
+    width: 540px; 
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-top:- 10px;
+}
+
+
+#home{
+    background-image: linear-gradient(rgba(9,5,54,0.3),rgba(5,4,46,0.7)),url("view-school-building.jpg");
+width: 100%;
+height: 100vh;
+background-size: cover;
+background-position: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+padding-top:40px ;
+
+}
+
+#home h2{
+    color: white;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+#home p{
+    width: 50%;
+    color: white;
+    font-size:0.9rem 
+    ;
+    line-height: 25px;
+}
+#home a{
+    text-emphasis: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: white;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+#home .btn{
+    margin-top: 30px;
+}
+#home .blue{
+    color: rgb(247, 246, 245);
+    background-color: rgb(20, 20, 96);
+}
+#home  .blue:hover{
+    color: rgb(13, 19, 105);
+    background-color: rgb(246, 246, 248);}
+#home .yellow{
+    background: rgb(250, 250, 0);
+    color:  rgb(20, 20, 96);
+    text-decoration: none;
+}
+
+#home  .yellow:hover{
+    color: rgb(247, 247, 248);
+    background-color: rgb(20, 20, 96);
+}
+#features{
+    padding: 5vw 8vw 0 8vw;
+    text-align: center;
+    background-image: linear-gradient(80deg,rgba(0, 128, 0, 0.338),white);
+
+}
+#features .fea-box{
+    background:var(--black);
+    text-align: start ;
+}
+
+#features .fea-box i{
+    font-size: 4.3rem;
+    color: black;
+    background: rgba(0, 0, 0, 0.537);
+    border: 1px solid white;
+}
+#features .fea-base{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    grid-gap: 1rem;
+    margin-top:50px ;
+}
+#features .fea-box h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    padding: 13px 0 7px 0;
+   
+}
+
+#features .fea-box p{
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(24, 22, 22);
+ 
+   
+    box-shadow: rgb(250, 250, 0),rgb(0, 255, 17);
+}
+
+
+
+#courses{
+    padding: 8vw 8vw 0 8vw;
+    text-align: center;
+}
+#courses .courses-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    grid-gap: 1rem;
+    margin-top:50px ;
+}
+#courses .courses{
+    text-align: start;
+    background: #f9f9f9ff;
+    height: 100%;
+    position: relative;
+}
+#courses .courses img{
+    width: 100%;
+    height: 60%;
+    background-position: center;
+    background-size: cover;
+}
+#courses .courses .details{
+    padding: 15px 15px 0 15px;
+}
+#courses .courses .details i{
+    color: rgba(255, 217, 0, 0.774);
+    font-size: .9rem;
+}
+#courses .courses .cost{
+    background-color: rgba(74,74,136);
+    color: white;
+    line-height: 70px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    right: 15px;
+    bottom: 110px;
+}
+#registration{
+    background-image: linear-gradient(rgba(9,5,54,0.3),rgba(5,4,46,0.7)),url("view-school-building.jpg");
+width: 100%;
+height: 100vh;
+background-size: cover;
+background-position: center;
+display: flex;
+align-items: center;
+text-align: center;
+justify-content: center;
+padding-top:40px ;
+
+
+}
+#registration .reminder h1{
+    color: white;
+    font-size: xx-large;
+}
+#registration .reminder .time{
+    display: flex;
+    margin-top: 20px;
+    margin-right: -20px;
+
+}
+#registration .reminder .time .date{
+padding: 13px 33px;
+text-align: center;
+justify-content: center;
+background-color: rgba(255, 255, 255, 0.25);
+backdrop-filter: blur(4px);
+box-shadow: 0 8px 32px 0 rgb(31, 38,135,0.37);
+border-radius: 4px;
+margin: 0 5px 10px 5px;
+font-size: 1.1rem;
+border: 1px solid white;
+font-size: 600;
+
+}
+
+
+
+
+
+
+    #experts{
+        padding: 8vw 8vw 0 8vw;
+           display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(650px,1fr));
+        grid-gap: 1rem;
+        margin-top:5px ;
+        text-align: center;
+ text-align: center;
+ background-image: linear-gradient(80deg,gray,white);
+    }
+  
+    #experts .profile{
+        text-align:center;
+      
+      justify-content: space-between;
+        
+    }
+    #experts .profile img{
+        width: 20%;
+        height: 30%;
+        background-position: center;
+        background-size: cover;
+    }
+    
+
+.pro-links{
+    margin-top: 10px;
+}
+.pro-links i{
+    padding: 10px 13px;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.pro-links i:hover{
+    background: blue;
+    color: white;
+    cursor: pointer;
+    border: 1px solid rgb(251, 254, 251);
+}
+
+
+footer{
+    padding: 8vw;
+    background: rgba(2, 16, 49, 0.849);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+footer .footer-col{
+    padding-bottom: 40px;
+}
+footer h3{
+    color: white;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+footer li{
+    list-style: none;
+    color: rgba(255, 255, 255, 0.537);
+    padding: 10px 0;
+    font-size: 15px;
+    cursor: pointer;
+    
+}
+
+footer li:hover{
+    color: green;
+    
+}
+footer p{
+    color: black;
+}
+
+
+footer .subscribe{
+    margin-top: 20px;
+}
+
+footer input{
+    width: 220px;
+    background: black;
+    padding: 12px 15px;
+    border: none;
+    outline: none;
+    color: white    ;
+}
+
+footer .subscribe a{
+    text-emphasis: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: white;
+    font-weight: 600;
+   
+    text-decoration: none;
+}
+
+footer .subscribe  .yellow{
+    background: rgb(255, 255, 2);
+    color: rgb(0, 0, 0);
+    transition: 0.3s ease;  
+}
+footer  .subscribe .yellow:hover{
+    color: rgb(3, 3, 3);
+    background: rgb(253, 253, 255);
+}
+
+footer .copyright{
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+
+
+footer .copyright .pro-links{
+    margin-top: 0px;
+}
+footer .copyright .pro-links i{
+   background: gray;
+   color: white;
+}
+
+footer .copyright .pro-links i:hover{
+    background: rgb(0, 255, 17);
+    color: rgb(252, 252, 255);
+    cursor: pointer;
+    border: 1px solid rgb(251, 254, 251);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
